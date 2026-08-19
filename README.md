@@ -9,3 +9,6 @@ https://altiveil.github.io/altiveil-extensions-list/
 | 拡張機能名 | バージョン | カテゴリ | 対応ブラウザ |
 | :--- | :--- | :--- | :--- |
 | **外枠px逆算定規 (Outer Box Ruler)** | v1.2.0 | Developer | Chrome / Firefox |
+
+**外枠px逆算定規 (Outer Box Ruler)**
+chrome store申請中
