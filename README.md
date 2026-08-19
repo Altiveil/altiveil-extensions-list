@@ -13,3 +13,7 @@ https://altiveil.github.io/altiveil-extensions-list/
 **外枠px逆算定規 (Outer Box Ruler)**
 - Chrome Web Store 申請中
 - 現在は日本語対応のみ（今後、英語対応を予定しています）
+
+## License
+
+[MIT License](LICENSE) © 2026 Altiveil
