@@ -1,18 +1,32 @@
 import { ExtensionItem } from '../types';
+import { resolveAssetUrl } from './assetHelper';
 
 export function handleExtensionDownload(
   extension: ExtensionItem,
   dlItem?: { browser: string; url: string; fileName: string }
 ) {
   if (dlItem && dlItem.url) {
-    window.location.href = dlItem.url;
+    const resolvedUrl = resolveAssetUrl(dlItem.url);
+    const a = document.createElement('a');
+    a.href = resolvedUrl;
+    a.download = dlItem.fileName || 'extension.zip';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
     return;
   }
 
   if (extension.downloadUrl && extension.downloadUrl !== '#') {
-    window.location.href = extension.downloadUrl;
+    const resolvedUrl = resolveAssetUrl(extension.downloadUrl);
+    const a = document.createElement('a');
+    a.href = resolvedUrl;
+    a.download = extension.downloadFileName || `${extension.id}.zip`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
     return;
   }
+
 
   const manifestSample = {
     manifest_version: 3,

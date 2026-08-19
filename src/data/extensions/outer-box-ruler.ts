@@ -75,19 +75,20 @@ export const outerBoxRulerExtension: ExtensionItem = {
   downloads: [
     {
       browser: 'chrome',
-      url: '/outer-box-ruler/chrome/outer-box-ruler-extension-chrome.zip',
+      url: './outer-box-ruler/chrome/outer-box-ruler-extension-chrome.zip',
       fileName: 'outer-box-ruler-extension-chrome.zip'
     },
     {
       browser: 'Firefox',
-      url: '/outer-box-ruler/firefox/outer-box-ruler-extension-firefox.zip',
+      url: './outer-box-ruler/firefox/outer-box-ruler-extension-firefox.zip',
       fileName: 'outer-box-ruler-extension-firefox.zip'
     }
   ],
   previewImages: [
-    '/outer-box-ruler/preview/image1.png',
-    '/outer-box-ruler/preview/image2.png',
-    '/outer-box-ruler/preview/image3.png'
+    './outer-box-ruler/preview/image1.png',
+    './outer-box-ruler/preview/image2.png',
+    './outer-box-ruler/preview/image3.png'
   ],
   iconName: 'LayoutGrid'
 };
+

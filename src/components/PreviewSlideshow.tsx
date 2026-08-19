@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Image as ImageIcon, Maximize2, X } from 'lucide-react';
+import { resolveAssetUrl } from '../utils/assetHelper';
 
 interface PreviewSlideshowProps {
   images?: string[];
@@ -18,10 +19,11 @@ export const PreviewSlideshow: React.FC<PreviewSlideshowProps> = ({
   const displayImages = images.length > 0
     ? images
     : [
-        '/outer-box-ruler/preview/image1.png',
-        '/outer-box-ruler/preview/image2.png',
-        '/outer-box-ruler/preview/image3.png',
+        './outer-box-ruler/preview/image1.png',
+        './outer-box-ruler/preview/image2.png',
+        './outer-box-ruler/preview/image3.png',
       ];
+
 
 
   useEffect(() => {
@@ -48,8 +50,10 @@ export const PreviewSlideshow: React.FC<PreviewSlideshowProps> = ({
     setFailedImages((prev) => ({ ...prev, [index]: true }));
   };
 
-  const currentImageSrc = displayImages[currentIndex];
+  const rawImageSrc = displayImages[currentIndex];
+  const currentImageSrc = resolveAssetUrl(rawImageSrc);
   const isCurrentFailed = failedImages[currentIndex];
+
 
   return (
     <div className="mb-4">
