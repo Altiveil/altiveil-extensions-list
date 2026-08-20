@@ -10,19 +10,16 @@
 
 ```text
 outer-box-ruler-extension.zip
-├── manifest.json                  # Manifest V3 定義ファイル
+├── manifest.json                 # Manifest V3 定義ファイル
 ├── background.js                 # Service Worker / 右クリック・ショートカット制御
 ├── content.js                    # Shadow DOM / 包含ブロック逆算 / 定規描画スクリプト
 ├── popup.html / popup.js         # ポップアップ画面
 ├── options.html / options.js     # 設定画面
-├── icons/                        # サブフォルダ（実在保証）
+├── icons/                        # サブフォルダ
 │   ├── icon16.png
 │   ├── icon32.png
 │   ├── icon48.png
 │   └── icon128.png
-├── PRIVACY_POLICY.md             # CWS 審査用プライバシーポリシー
-├── STORE_LISTING.md              # CWS 掲載用メタデータ・詳細説明文
-└── README.md                     # 本ドキュメント
 ```
 
 ---
