@@ -40,6 +40,46 @@ export default function App() {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
+  // Dynamic SEO: Update document.title and meta description on route change
+  useEffect(() => {
+    const SITE_NAME = 'Altiveil Extension List';
+    let title = `${SITE_NAME} - ブラウザ拡張機能 公式配布ポータル`;
+    let description = 'Altiveilが開発したブラウザ拡張機能の公式ダウンロード・インストールガイド・プライバシーポリシーを掲載しています。Chrome / Firefox 対応。';
+
+    if (currentRoute.type === 'detail' && currentRoute.extensionId) {
+      const ext = extensions.find((e) => e.id === currentRoute.extensionId);
+      if (ext) {
+        title = `${ext.name} - ダウンロード | ${SITE_NAME}`;
+        description = `${ext.tagline}。${ext.supportedBrowsers.join(' / ')} 対応。無料ダウンロード・インストール方法・プライバシーポリシーを掲載。`;
+      }
+    } else if (currentRoute.type === 'privacy') {
+      title = `プライバシーポリシー | ${SITE_NAME}`;
+      description = 'Altiveilが開発するブラウザ拡張機能のプライバシーポリシー（共通版）。個人情報の非収集・完全ローカル動作・権限の用途一覧を掲載。';
+    }
+
+    document.title = title;
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute('content', description);
+    }
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) {
+      ogTitle.setAttribute('content', title);
+    }
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) {
+      ogDesc.setAttribute('content', description);
+    }
+    const twTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twTitle) {
+      twTitle.setAttribute('content', title);
+    }
+    const twDesc = document.querySelector('meta[name="twitter:description"]');
+    if (twDesc) {
+      twDesc.setAttribute('content', description);
+    }
+  }, [currentRoute, extensions]);
+
   const navigateTo = (route: PageRoute) => {
     setCurrentRoute(route);
     if (route.type === 'list') {

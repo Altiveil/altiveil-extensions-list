@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://altiveil.github.io/altiveil-extensions-list/sitemap.xml

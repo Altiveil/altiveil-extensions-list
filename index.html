@@ -1,21 +1,156 @@
 <!doctype html>
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║                                                              ║
+  ║   見ているな……貴様ッ！！                                    ║
+  ║                                                              ║
+  ║   このソースコードを覗き込むとは……                          ║
+  ║   やはり「開発者」か……！                                    ║
+  ║                                                              ║
+  ║   だが安心しろ。                                              ║
+  ║   このポータルにはッ！                                        ║
+  ║   外部通信も！トラッキングも！Cookieも！                      ║
+  ║   一切存在しないッ！！！                                      ║
+  ║                                                              ║
+  ║   「完全ローカル動作」……それが我が Altiveil の『覚悟』だ。  ║
+  ║                                                              ║
+  ║   貴様がこのコードに何を見出すかは自由だが……               ║
+  ║   ひとつだけ言っておく。                                      ║
+  ║                                                              ║
+  ║   このサイトのプライバシーポリシーは「本物」だ。              ║
+  ║   疑うなら……自分の目で確かめるがいいッ！                    ║
+  ║                                                              ║
+  ║                          — Altiveil 開発者より、敬意を込めて  ║
+  ║                                                              ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Altiveil Extension List - ブラウザ拡張機能配布ポータル</title>
-    <meta name="description" content="Altiveilが開発したブラウザ拡張機能の一覧、ダウンロード、およびプライバシーポリシーを掲載しています。" />
-    <meta property="og:title" content="Altiveil Extension List" />
-    <meta property="og:description" content="Altiveil拡張機能の公式ダウンロード＆プライバシーポリシータルサイト" />
+
+    <!-- Primary Meta Tags -->
+    <title>Altiveil Extension List - ブラウザ拡張機能 公式配布ポータル</title>
+    <meta name="title" content="Altiveil Extension List - ブラウザ拡張機能 公式配布ポータル" />
+    <meta name="description" content="Altiveilが開発したブラウザ拡張機能（外枠px逆算定規・ポジティブ変換定規）の公式ダウンロード・インストールガイド・プライバシーポリシーを掲載しています。Chrome / Firefox 対応。" />
+    <meta name="keywords" content="Altiveil,ブラウザ拡張機能,Chrome拡張機能,Firefox拡張機能,外枠px逆算定規,ポジティブ変換定規,Peaceful Web Translator,Outer Box Ruler,CSS定規,SNS変換" />
+    <meta name="author" content="Altiveil" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://altiveil.github.io/altiveil-extensions-list/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+
+    <!-- Theme Color (Mobile Browsers) -->
+    <meta name="theme-color" content="#18181b" />
+    <meta name="msapplication-TileColor" content="#18181b" />
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://altiveil.github.io/altiveil-extensions-list/" />
+    <meta property="og:title" content="Altiveil Extension List - ブラウザ拡張機能 公式配布ポータル" />
+    <meta property="og:description" content="Altiveilが開発したブラウザ拡張機能の公式ダウンロード・インストールガイド・プライバシーポリシーを掲載しています。Chrome / Firefox 対応。" />
+    <meta property="og:image" content="https://altiveil.github.io/altiveil-extensions-list/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Altiveil Extension List - ブラウザ拡張機能配布ポータル" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:site_name" content="Altiveil Extension List" />
+
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://altiveil.github.io/altiveil-extensions-list/" />
+    <meta name="twitter:title" content="Altiveil Extension List - ブラウザ拡張機能 公式配布ポータル" />
+    <meta name="twitter:description" content="Altiveilが開発したブラウザ拡張機能の公式ダウンロード・インストールガイド・プライバシーポリシーを掲載しています。" />
+    <meta name="twitter:image" content="https://altiveil.github.io/altiveil-extensions-list/og-image.png" />
+    <meta name="twitter:image:alt" content="Altiveil Extension List - ブラウザ拡張機能配布ポータル" />
+
+    <!-- JSON-LD Structured Data (Static - WebSite) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Altiveil Extension List",
+      "alternateName": "Altiveil ブラウザ拡張機能配布ポータル",
+      "url": "https://altiveil.github.io/altiveil-extensions-list/",
+      "description": "Altiveilが開発したブラウザ拡張機能の公式ダウンロード・インストールガイド・プライバシーポリシーを掲載しています。",
+      "inLanguage": "ja",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Altiveil",
+        "url": "https://altiveil.github.io/altiveil-extensions-list/"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data (Static - SoftwareApplication: Outer Box Ruler) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "外枠px逆算定規 (Outer Box Ruler)",
+      "applicationCategory": "BrowserApplication",
+      "operatingSystem": "Chrome, Firefox",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "description": "Webページの要素をクリックしたりドラッグ選択して、親コンテナや近くの要素との距離（余白やマージン）を測れる定規ツールです。Tailwind CSSや標準CSSコードをその場で生成してワンクリックでコピーできます。",
+      "softwareVersion": "1.2.0",
+      "author": {
+        "@type": "Organization",
+        "name": "Altiveil"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data (Static - SoftwareApplication: Peaceful Web Translator) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "ポジティブ変換定規 (Peaceful Web Translator)",
+      "applicationCategory": "BrowserApplication",
+      "operatingSystem": "Chrome, Firefox",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "description": "SNS、動画コメント欄、掲示板などのWebページの攻撃的な言葉や誹謗中傷・煽りスラングを、ブラウザ内でポジティブな表現へ自動変換します。310語以上の辞書を搭載し、完全ローカル動作。",
+      "softwareVersion": "1.0.0",
+      "author": {
+        "@type": "Organization",
+        "name": "Altiveil"
+      }
+    }
+    </script>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- SPA redirect handler (paired with 404.html) -->
+    <script>
+      (function(l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
   </head>
   <body class="bg-white text-zinc-900 min-h-screen antialiased selection:bg-emerald-600 selection:text-white">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-
