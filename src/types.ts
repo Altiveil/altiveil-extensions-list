@@ -15,6 +15,10 @@ export interface ExtensionItem {
   size: string;
   supportedBrowsers: string[];
   features: string[];
+  usageGuide?: {
+    title: string;
+    description: string;
+  }[];
   permissions: {
     key: string;
     label: string;

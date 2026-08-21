@@ -121,10 +121,33 @@ export const ExtensionDetailPage: React.FC<ExtensionDetailPageProps> = ({
 
           <ul className="space-y-1.5 text-sm text-zinc-700 list-disc list-inside">
             {extension.features.map((feature, idx) => (
-              <li key={idx}>{feature}</li>
+               <li key={idx}>{feature}</li>
             ))}
           </ul>
         </section>
+
+        {extension.usageGuide && extension.usageGuide.length > 0 && (
+          <section className="bg-white border border-zinc-200 rounded-lg p-5">
+            <h2 className="text-sm font-bold text-zinc-900 mb-3">
+              使い方・操作手順
+            </h2>
+            <div className="space-y-3">
+              {extension.usageGuide.map((guide, idx) => (
+                <div
+                  key={idx}
+                  className="p-3.5 bg-zinc-50 rounded border border-zinc-200 text-sm"
+                >
+                  <h3 className="font-bold text-zinc-800 text-sm mb-1">
+                    {guide.title}
+                  </h3>
+                  <p className="text-zinc-600 leading-relaxed text-xs sm:text-sm">
+                    {guide.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         <section className="bg-white border border-zinc-200 rounded-lg p-5">
 

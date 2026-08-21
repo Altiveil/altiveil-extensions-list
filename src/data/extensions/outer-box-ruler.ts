@@ -20,6 +20,21 @@ export const outerBoxRulerExtension: ExtensionItem = {
     'Alt + R（Mac: Option + R）や右クリックメニューからいつでもサッと起動'
   ],
 
+  usageGuide: [
+    {
+      title: '1. 定規モードの起動',
+      description: 'ショートカット「Alt + R」（Mac: Option + R）を押すか、画面上の任意の場所を右クリックして「外枠px逆算定規を起動」を選択します。'
+    },
+    {
+      title: '2. 要素・余白の計測',
+      description: '測定したい要素をクリックするか、画面上をドラッグして範囲を選択すると、親コンテナや周辺要素との距離・余白がガイド線でリアルタイム表示されます。'
+    },
+    {
+      title: '3. CSS / Tailwindコードのコピー',
+      description: '計測バーに表示されるTailwind CSS（Margin / Absolute）や標準CSSのコードをクリックするだけで、即座にクリップボードへコピーできます。'
+    }
+  ],
+
   permissions: [
     {
       key: 'storage',

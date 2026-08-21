@@ -62,7 +62,7 @@ export const ExtensionCard: React.FC<ExtensionCardProps> = ({
           </span>
         </div>
 
-        <p className="text-sm text-zinc-700 mb-3 leading-relaxed">
+        <p className="text-sm text-zinc-700 mb-3 leading-relaxed min-h-[4.25rem] flex items-start">
           {extension.tagline}
         </p>
 

@@ -65,7 +65,7 @@ export const PreviewSlideshow: React.FC<PreviewSlideshowProps> = ({
           <img
             src={currentImageSrc}
             alt={`${extensionName} プレビュー`}
-            className="w-full h-full object-cover cursor-pointer"
+            className="w-full h-full object-contain bg-black cursor-pointer"
             onError={() => handleImageError(currentIndex)}
           />
         ) : (

@@ -286,6 +286,12 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onRouteCha
                   <td className="py-4 px-4 text-xs whitespace-nowrap">使用しない<br/><span className="text-zinc-400">（<code className="font-normal">storage.local</code>のみ）</span></td>
                   <td className="py-4 px-4 text-xs leading-relaxed">対象ページのDOM座標・スタイル情報を取得するが、いずれも表示処理のためだけにメモリ上で使用し、保存・送信は行わない。クロスオリジンのiframe内部は技術的制約（Same-Origin Policy）により解析対象外</td>
                 </tr>
+                <tr>
+                  <td className="py-4 px-4 font-medium text-zinc-900 whitespace-nowrap">ポジティブ変換定規 (Peaceful Web Translator)</td>
+                  <td className="py-4 px-4 font-mono text-xs leading-relaxed"><code className="bg-zinc-50 text-zinc-800 border border-zinc-200 px-1 rounded">storage</code>, <code className="bg-zinc-50 text-zinc-800 border border-zinc-200 px-1 rounded">host_permissions</code> <span className="text-zinc-500 text-[10px]">(&lt;all_urls&gt;)</span></td>
+                  <td className="py-4 px-4 text-xs whitespace-nowrap">使用しない<br/><span className="text-zinc-400">（<code className="font-normal">storage.local</code>のみ）</span></td>
+                  <td className="py-4 px-4 text-xs leading-relaxed">全サイト上のテキストノードをブラウザ内メモリ上で走査し、辞書に基づく文字列置換を行うため <code className="bg-white border border-zinc-200 px-1 rounded">&lt;all_urls&gt;</code> が機能上必須。ページ内テキストの保存・外部送信は一切行わない。辞書設定（置換ルール）は <code className="bg-white border border-zinc-200 px-1 rounded">storage.local</code> にのみ保存</td>
+                </tr>
               </tbody>
             </table>
           </div>
