@@ -21,6 +21,7 @@ https://altiveil.github.io/altiveil-extensions-list/
 - 外部サーバー通信を一切行わない完全ローカル動作
 - 310語以上の辞書を標準搭載 ＆ カスタムルールの自由な追加・編集に対応
 - Chrome / Firefox 対応
+- 現在は日本語対応のみ（今後、英語対応を予定）
 
 ## License
 
