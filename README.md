@@ -6,10 +6,10 @@ https://altiveil.github.io/altiveil-extensions-list/
 
 ## 掲載拡張機能一覧
 
-| 拡張機能名 | バージョン | カテゴリ | 対応ブラウザ | 対応言語 |
-| :--- | :--- | :--- | :--- | :--- |
-| **外枠px逆算定規 (Outer Box Ruler)** | v1.2.0 | Developer | Chrome / Firefox | 日本語（英語対応予定） |
-| **ポジティブ変換定規 (Peaceful Web Translator)** | v1.0.0 | Productivity | Chrome / Firefox | 日本語 |
+| 拡張機能名 | バージョン | カテゴリ | 対応ブラウザ | 対応言語 | Chrome Web Store |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **外枠px逆算定規 (Outer Box Ruler)** | v1.2.0 | Developer | Chrome / Firefox | 日本語（英語対応予定） | [公開中](https://chromewebstore.google.com/detail/gnbbcekkchmhacoiephiodapffpjcdid) |
+| **ポジティブ変換定規 (Peaceful Web Translator)** | v1.0.0 | Productivity | Chrome / Firefox | 日本語 | 審査中 |
 
 ### 外枠px逆算定規 (Outer Box Ruler)
 - Webページ上の要素をクリックするだけで、padding / border / marginを含めた外枠サイズを即座に計測・逆算する開発者向け定規ツール
