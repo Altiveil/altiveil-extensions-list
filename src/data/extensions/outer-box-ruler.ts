@@ -99,6 +99,12 @@ export const outerBoxRulerExtension: ExtensionItem = {
       fileName: 'outer-box-ruler-extension-firefox.zip'
     }
   ],
+  storeUrls: [
+    {
+      browser: 'Chrome',
+      url: 'https://chromewebstore.google.com/detail/gnbbcekkchmhacoiephiodapffpjcdid'
+    }
+  ],
   previewImages: [
     './outer-box-ruler/preview/image1.png',
     './outer-box-ruler/preview/image2.png',

@@ -37,8 +37,8 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onRouteCha
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-6 text-sm text-zinc-700 bg-zinc-50 p-5 rounded-lg border border-zinc-100">
             <div className="md:col-span-2"><strong className="text-zinc-900 font-semibold mr-2">適用範囲:</strong><span className="leading-relaxed inline-block">Altiveilが開発・公開するすべてのブラウザ拡張機能（Google Chrome Web Store および Mozilla Firefox Add-ons (AMO) に掲載される全製品。以下「本拡張機能群」）</span></div>
             <div><strong className="text-zinc-900 font-semibold mr-2">発行者:</strong>Altiveil（個人開発者運営）</div>
-            <div><strong className="text-zinc-900 font-semibold mr-2">最終更新日:</strong>2026年8月19日</div>
-            <div><strong className="text-zinc-900 font-semibold mr-2">バージョン:</strong>2.0</div>
+            <div><strong className="text-zinc-900 font-semibold mr-2">最終更新日:</strong>2026年8月22日</div>
+            <div><strong className="text-zinc-900 font-semibold mr-2">バージョン:</strong>2.1</div>
             <div className="md:col-span-2 flex flex-wrap gap-2 items-center">
               <strong className="text-zinc-900 font-semibold mr-1">お問い合わせ:</strong>
               <a href="mailto:altiveil.com@gmail.com" className="text-emerald-600 hover:text-emerald-700 hover:underline font-medium">altiveil.com@gmail.com</a>
@@ -347,6 +347,11 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onRouteCha
                 </tr>
               </thead>
               <tbody className="divide-y divide-zinc-200 text-zinc-600 text-sm">
+                <tr>
+                  <td className="py-3 px-4 font-mono font-semibold text-zinc-900">2.1</td>
+                  <td className="py-3 px-4 whitespace-nowrap">2026-08-22</td>
+                  <td className="py-3 px-4 leading-relaxed">第11章「ポジティブ変換定規」の補足事項を更新。<code className="bg-zinc-100 text-zinc-800 px-1 rounded text-xs">storage</code> 権限の用途（有効/無効状態・カスタム辞書の保持）を権限ごとに分離して明記</td>
+                </tr>
                 <tr>
                   <td className="py-3 px-4 font-mono font-semibold text-zinc-900">2.0</td>
                   <td className="py-3 px-4 whitespace-nowrap">2026-08-19</td>

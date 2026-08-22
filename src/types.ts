@@ -43,6 +43,10 @@ export interface ExtensionItem {
     url: string;
     fileName: string;
   }[];
+  storeUrls?: {
+    browser: string;
+    url: string;
+  }[];
   githubRepoUrl?: string;
   iconName?: string;
   previewImages?: string[];

@@ -29,7 +29,10 @@ outer-box-ruler-extension.zip
 
 ## インストール手順
 
-### 1. Google Chrome への導入 (Chrome Web Store 審査済/開発者モード)
+### 1. Chrome Web Store からインストール（推奨）
+[Chrome Web Store のページ](https://chromewebstore.google.com/detail/gnbbcekkchmhacoiephiodapffpjcdid) にアクセスし、「Chromeに追加」をクリックするだけで完了です。
+
+### 2. Google Chrome への手動導入（開発者モード）
 1. ダウンロードした ZIP ファイルを展開（解凍）します。
 2. Chrome を開き、アドレスバーに `chrome://extensions/` と入力して開きます。
 3. 画面右上の **「デベロッパーモード」** を ON にします。
@@ -37,7 +40,7 @@ outer-box-ruler-extension.zip
 5. 解凍したフォルダを選択します。
 6. 拡張機能バーに「外枠px逆算定規」が表示されれば準備完了です！
 
-### 2. Mozilla Firefox への導入 (AMO / 一時アドオン)
+### 3. Mozilla Firefox への導入 (AMO / 一時アドオン)
 1. ダウンロードした Firefox用 ZIP ファイルを展開します。
 2. Firefox を開き、アドレスバーに `about:debugging` と入力して開きます。
 3. 左メニューの **「この Firefox」** をクリックします。

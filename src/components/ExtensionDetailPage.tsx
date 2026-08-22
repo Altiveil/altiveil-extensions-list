@@ -1,4 +1,5 @@
 import React from 'react';
+import { ExternalLink } from 'lucide-react';
 import { ExtensionItem, PageRoute } from '../types';
 import { PreviewSlideshow } from './PreviewSlideshow';
 
@@ -81,6 +82,23 @@ export const ExtensionDetailPage: React.FC<ExtensionDetailPageProps> = ({
             )}
           </div>
         </div>
+
+        {extension.storeUrls && extension.storeUrls.length > 0 && (
+          <div className="flex flex-wrap gap-2 px-6 py-3 bg-white border-t border-zinc-200">
+            {extension.storeUrls.map((store) => (
+              <a
+                key={store.browser}
+                href={store.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 rounded text-xs font-semibold text-emerald-800 transition-colors"
+              >
+                <span>{store.browser} Web Store で見る</span>
+                <ExternalLink className="w-3.5 h-3.5 opacity-70" />
+              </a>
+            ))}
+          </div>
+        )}
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 p-6 text-xs text-zinc-600 bg-zinc-50">
           <div>
