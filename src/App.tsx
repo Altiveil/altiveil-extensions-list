@@ -40,7 +40,6 @@ export default function App() {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
-  // Dynamic SEO: Update document.title and meta description on route change
   useEffect(() => {
     const SITE_NAME = 'Altiveil Extension List';
     let title = `${SITE_NAME} - ブラウザ拡張機能 公式配布ポータル`;
@@ -199,7 +198,6 @@ export default function App() {
 
             {filteredExtensions.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-
 
                 {filteredExtensions.map((extension) => (
                   <ExtensionCard
