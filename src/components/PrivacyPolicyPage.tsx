@@ -284,7 +284,11 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onRouteCha
                   <td className="py-4 px-4 font-medium text-zinc-900 whitespace-nowrap">外枠px逆算定規 (Outer Box Ruler)</td>
                   <td className="py-4 px-4 font-mono text-xs leading-relaxed"><code className="bg-zinc-50 text-zinc-800 border border-zinc-200 px-1 rounded">storage</code>, <code className="bg-zinc-50 text-zinc-800 border border-zinc-200 px-1 rounded">activeTab</code>, <code className="bg-zinc-50 text-zinc-800 border border-zinc-200 px-1 rounded">scripting</code>, <code className="bg-zinc-50 text-zinc-800 border border-zinc-200 px-1 rounded">contextMenus</code></td>
                   <td className="py-4 px-4 text-xs whitespace-nowrap">使用しない<br/><span className="text-zinc-400">（<code className="font-normal">storage.local</code>のみ）</span></td>
-                  <td className="py-4 px-4 text-xs leading-relaxed">対象ページのDOM座標・スタイル情報を取得するが、いずれも表示処理のためだけにメモリ上で使用し、保存・送信は行わない。クロスオリジンのiframe内部は技術的制約（Same-Origin Policy）により解析対象外</td>
+                  <td className="py-4 px-4 text-xs leading-relaxed">
+                    <code className="bg-white border border-zinc-200 px-1 rounded">storage</code>: ユーザー設定（計算単位・スナップグリッド・表示言語）を <code className="bg-white border border-zinc-200 px-1 rounded">storage.local</code> にのみ保存。<br/>
+                    <code className="bg-white border border-zinc-200 px-1 rounded">activeTab</code> / <code className="bg-white border border-zinc-200 px-1 rounded">scripting</code>: 起動されたアクティブタブでのみ定規UIを描画・測定するために使用。DOM座標・スタイル情報は表示処理のためだけにメモリ上で使用し、保存・送信は行わない。<br/>
+                    <code className="bg-white border border-zinc-200 px-1 rounded">contextMenus</code>: 右クリックメニューから定規を起動するために使用。
+                  </td>
                 </tr>
                 <tr>
                   <td className="py-4 px-4 font-medium text-zinc-900 whitespace-nowrap">ポジティブ変換定規 (Peaceful Web Translator)</td>

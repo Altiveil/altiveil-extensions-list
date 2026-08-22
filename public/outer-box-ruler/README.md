@@ -11,10 +11,13 @@
 ```text
 outer-box-ruler-extension.zip
 ├── manifest.json                  # Manifest V3 定義ファイル
+├── _locales/                      # 多言語メッセージ定義 (ja / en)
+│   ├── ja/messages.json
+│   └── en/messages.json
 ├── background.js                 # Service Worker / 右クリック・ショートカット制御
-├── content.js                    # Shadow DOM / 包含ブロック逆算 / 定規描画スクリプト
-├── popup.html / popup.js         # ポップアップ画面
-├── options.html / options.js     # 設定画面
+├── content.js                    # Shadow DOM / 包含ブロック逆算 / 定規描画 / i18n
+├── popup.html / popup.js         # ポップアップ画面 (多言語対応)
+├── options.html / options.js     # 設定画面 (言語切り替え対応)
 ├── icons/                        # サブフォルダ（実在保証）
 │   ├── icon16.png
 │   ├── icon32.png
@@ -55,3 +58,4 @@ outer-box-ruler-extension.zip
 - **ドラッグ範囲選択 / クリック選択**: 配置したいサイズの矩形をドラッグ描画、または既存要素をクリック。
 - **自動逆算**: Containing Block境界線、直近の兄弟要素との距離（Top / Left / Right / Bottom）が瞬時にガイド線表示されます。
 - **ワンクリックコピー**: Tailwind（Margin / Absolute）および標準CSSを即座にクリップボードへコピー可能。
+- **言語切り替え**: 拡張機能アイコンを右クリック →「オプション」または定規パネルの「SET」ボタンから、日本語 / English / ブラウザ言語（Auto）をいつでも切り替え可能。

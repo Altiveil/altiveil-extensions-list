@@ -3,19 +3,20 @@ import { ExtensionItem } from '../../types';
 export const outerBoxRulerExtension: ExtensionItem = {
   id: 'outer-box-ruler',
   name: '外枠px逆算定規 (Outer Box Ruler)',
-  version: '1.2.0',
+  version: '1.3.0',
   status: 'published',
   category: 'Developer',
   tagline: '要素の余白や距離を測って、CSS・Tailwindコードをコピーできる定規',
   description: 'Webページの要素をクリックしたりドラッグ選択して、親コンテナや近くの要素との距離（余白やマージン）を測れる定規ツールです。\n\n測った距離から Tailwind CSS（mt-[24px] / mt-6 など）や標準CSSコードをその場で生成してワンクリックでコピーできるので、デザインの再現やCSSコーディングのちょっとした計算に役立ちます。',
-  lastUpdated: '2026-08-18',
-  size: '128KB',
+  lastUpdated: '2026-08-22',
+  size: '132KB',
   supportedBrowsers: ['Chrome', 'Firefox'],
   features: [
     'クリックまたはドラッグで要素・余白の距離をガイド線表示',
     'Tailwind CSS（任意値・標準スケール）や標準CSSコードのワンクリックコピー',
     'px / rem / % の単位切り替えや、4px / 8px グリッドスナップに対応',
     '矢印キー（1px）や Shift+矢印（10px）でのキーボード微調整',
+    '日本語 / 英語（English）の多言語対応（設定画面から自由に変更可能）',
     '測定用UIをShadow DOMで描画し、Webサイト側のスタイル崩れを防止',
     'Alt + R（Mac: Option + R）や右クリックメニューからいつでもサッと起動'
   ],
@@ -39,7 +40,7 @@ export const outerBoxRulerExtension: ExtensionItem = {
     {
       key: 'storage',
       label: 'ストレージ',
-      description: '設定（単位やスナップグリッドなど）をローカルに保存するために使用します。'
+      description: '設定（単位、スナップグリッド、表示言語など）をローカルに保存するために使用します。'
     },
     {
       key: 'activeTab',
@@ -90,12 +91,12 @@ export const outerBoxRulerExtension: ExtensionItem = {
   downloads: [
     {
       browser: 'chrome',
-      url: './outer-box-ruler/chrome/outer-box-ruler-extension-chrome.zip',
+      url: './outer-box-ruler/chrome/outer-box-ruler-extension-chrome.zip?v=1.3.0',
       fileName: 'outer-box-ruler-extension-chrome.zip'
     },
     {
       browser: 'Firefox',
-      url: './outer-box-ruler/firefox/outer-box-ruler-extension-firefox.zip',
+      url: './outer-box-ruler/firefox/outer-box-ruler-extension-firefox.zip?v=1.3.0',
       fileName: 'outer-box-ruler-extension-firefox.zip'
     }
   ],
