@@ -8,13 +8,13 @@ https://altiveil.github.io/altiveil-extensions-list/
 
 | 拡張機能名 | バージョン | カテゴリ | 対応ブラウザ | 対応言語 | Chrome Web Store |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **外枠px逆算定規 (Outer Box Ruler)** | v1.2.0 | Developer | Chrome / Firefox | 日本語（英語対応予定） | [公開中](https://chromewebstore.google.com/detail/gnbbcekkchmhacoiephiodapffpjcdid) |
+| **外枠px逆算定規 (Outer Box Ruler)** | v1.3.0 | Developer | Chrome / Firefox | 日本語 / 英語 (English) | [公開中](https://chromewebstore.google.com/detail/gnbbcekkchmhacoiephiodapffpjcdid) |
 | **ポジティブ変換定規 (Peaceful Web Translator)** | v1.0.0 | Productivity | Chrome / Firefox | 日本語 | 審査中 |
 
 ### 外枠px逆算定規 (Outer Box Ruler)
 - Webページ上の要素をクリックするだけで、padding / border / marginを含めた外枠サイズを即座に計測・逆算する開発者向け定規ツール
 - [Chrome Web Store で公開中](https://chromewebstore.google.com/detail/gnbbcekkchmhacoiephiodapffpjcdid) / Firefox 対応
-- 現在は日本語対応のみ（今後、英語対応を予定）
+- 日本語・英語（English）の多言語対応（設定画面から自由に変更可能）
 
 ### ポジティブ変換定規 (Peaceful Web Translator)
 - SNS、動画コメント欄、掲示板などのトゲのある言葉や煽りスラングを、ブラウザ内でポジティブ＆ユーモアあふれる表現へ自動置換するツール
